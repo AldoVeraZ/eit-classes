@@ -1,0 +1,45 @@
+/* varias formas de asignarles estilos a nuestros elementos*/
+/* uno es directamente al elemento ej: todos los parrafos p p tengan color white por ejemplo , se llama directamente porque es un objeto*/
+/* p { 
+  color: white;
+} */
+/* Otra forma es agregando una id y llamandola # , no se llama directamente, hay que poner #*/
+h1,
+h2,
+p {
+  /* el atributo font family me permite darle estilo a mi tipografia */
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-style: italic; */
+  /* font-weight: bold; */
+}
+aside {
+  width: 196px;
+}
+
+#content {
+  display: flex;
+  width: 800px;
+}
+.d-flex {
+  /* helper son clases propias para una clase en particular
+  una clase para un atributo de css en particular */
+  display: flex;
+}
+
+/* buena practica es agregar clases de estilo a los elementos css */
+/* generando clases para colores de fondo */
+.bg-color-green {
+  background-color: aquamarine;
+}
+
+.bg-color-red {
+  background-color: darksalmon;
+}
+
+.bg-color-blue {
+  background-color: deepskyblue;
+}
+
+.bg-color-pink {
+  background-color: lightpink;
+}
