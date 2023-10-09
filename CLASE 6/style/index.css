@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,700&family=Orbitron:wght@400;700;900&family=Roboto+Slab:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&display=swap");
+* {
+  font-family: "Orbitron", sans-serif;
+  font-style: italic;
+}
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  margin-top: 4.5rem;
+  /* box-sizing: content-box; */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 16px;
+}
+
+nav ul li a {
+  color: grey;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Pixelify Sans", cursive;
+  margin: 0;
+  font-weight: 900;
+  font-size: 2rem;
+}
+h2 {
+  font-weight: 700;
+}
+p,
+a,
+li {
+  font-weight: 400;
+}
+
+p,
+li {
+  font-size: 16px;
+}
+a {
+  /*con respecto al elemento padre  */
+  font-size: 1.5rem;
+  text-decoration: none;
+  /*con respecto a la configuracion de root  */
+  /* font-size: 1.5rem; */
+}
+header a h1 {
+  color: black;
+}
+
+section {
+  padding: 1rem 5%;
+}
+
+#clientes p {
+  color: #198038;
+}
+
+.d-flex {
+  display: flex;
+}
+.ml-1 {
+  margin-left: 16px;
+}
+
+.float-right {
+  float: right;
+}
+.header-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid black;
+  background-color: antiquewhite;
+  position: fixed;
+  padding: 8px;
+  top: 0;
+  width: 100%;
+}
+
+.text {
+  float: left;
+  text-align: justify;
+}
+
+.image-container {
+  border: 4px solid violet;
+  height: 300px;
+  width: fit-content;
+  /* height: 300px; */
+}
+.image {
+  height: 100%;
+  /* le damos un 100% del padre (image-container), cuando hablamos de % tiene que ver con el elemento padre, y el elemento padre que contiene este image
+  es image-container, entonces si al image-container le di los 300px , al decirle a image que tiene 100% de alto por ainamiento o herencia, tomaría los 300 pixeles */
+  border-width: 2px;
+  border-color: white;
+  border-style: inset inset none none;
+}
+
+.height-200 {
+  height: 200px;
+}
+
+.container-galery {
+  display: flex;
+  flex-flow: wrap; /* hace un quiebre en los casos que no entre */
+  justify-content: center;
+}
+
+.galery-images {
+  border: 4px solid #0043ce;
+  height: 250px;
+  /* width: 250px; */
+  /* width: initial; */
+  margin: 16px;
+  /* width: 320px;
+  margin: 16px;
+  border: 4px solid #0043ce; */
+}
+
+/* https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3870&q=80 */
+.nosotros-banner {
+  background-image: url("https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3870&q=80");
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 86vh;
+  flex-direction: column;
+}
+.nosotros-banner h2 {
+  background-color: #122816a1;
+  font-size: 3rem;
+  color: #e6e6e6;
+  text-align: center;
+}
+
+.nosotros-banner p {
+  background-color: #122816a1;
+  color: #e6e6e6;
+  text-align: center;
+}
+
+/* VH y VW
+view with es el 1% del ancho de la pantalla grafica
+view height , es el 1% de la altura de la pantalla grafica */
