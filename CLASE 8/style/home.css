@@ -1,0 +1,34 @@
+.image-container {
+  border: 4px solid violet;
+  height: 300px;
+  width: fit-content;
+  /* height: 300px; */
+}
+.image {
+  height: 100%;
+  /* le damos un 100% del padre (image-container), cuando hablamos de % tiene que ver con el elemento padre, y el elemento padre que contiene este image
+  es image-container, entonces si al image-container le di los 300px , al decirle a image que tiene 100% de alto por ainamiento o herencia, tomaría los 300 pixeles */
+  border-width: 2px;
+  border-color: white;
+  border-style: inset inset none none;
+}
+
+.container-galery {
+  display: flex;
+  flex-flow: wrap; /* hace un quiebre en los casos que no entre */
+  justify-content: center;
+}
+
+.galery-images {
+  border: 4px solid #0043ce;
+  height: 250px;
+  /* width: 250px; */
+  /* width: initial; */
+  margin: 16px;
+  /* width: 320px;
+  margin: 16px;
+  border: 4px solid #0043ce; */
+}
+#clientes p {
+  color: #198038;
+}

@@ -1,0 +1,57 @@
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 16px;
+}
+
+/* nav ul li a {
+  color: grey;
+  text-decoration: none;
+} */
+
+header a h1 {
+  color: black;
+}
+
+/* Seudo clases; hacen referencia a los estados del link en este caso, se jace referencia al estado del elemento*/
+
+/* a:link estado natural del a, del link, cuando recien se muestra*/
+a:link {
+  color: grey;
+  text-decoration: none;
+}
+
+/* a:hover cuando pasa el mouse por encima del link*/
+a:hover {
+  color: rgb(2, 87, 140);
+  font-size: 1.75rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* cuando fuimos a la pagina y volvimos a la pagina original y queda con un color diferente del original para dar cuenta que se visito la pagina */
+a:visited {
+  color: rgb(114, 12, 114);
+  text-decoration: none;
+}
+
+/* lo que se configure aca tiene un efecto mientras seleccionemos el link*/
+a:active {
+  color: #fff;
+}
+
+.header-container {
+  align-items: center;
+  background-color: antiquewhite;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding: 8px;
+  top: 0;
+  width: 100%;
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,700&family=Orbitron:wght@400;700;900&family=Roboto+Slab:wght@400;700&display=swap");
+* {
+  font-family: "Orbitron", sans-serif;
+  font-style: italic;
+}
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  margin-top: 4.75rem;
+  /* box-sizing: content-box; */
+}
+
+h1 {
+  font-family: "varsity", cursive;
+  margin: 0;
+  font-weight: 900; /* No tiene efecto alguno porque no esta configurado en los font-faces */
+  font-size: 2rem;
+}
+h2 {
+  font-weight: 700;
+}
+p,
+a,
+li {
+  font-weight: 400;
+}
+
+p,
+li {
+  font-size: 16px;
+}
+a {
+  /*con respecto al elemento padre  */
+  font-size: 1.5rem;
+  text-decoration: none;
+  /*con respecto a la configuracion de root  */
+  /* font-size: 1.5rem; */
+}
+
+section {
+  padding: 1rem 5%;
+}
+
+/* Helpers */
+
+.d-flex {
+  display: flex;
+}
+.float-right {
+  float: right;
+}
+
+.height-200 {
+  height: 200px;
+}
+.ml-1 {
+  margin-left: 16px;
+}
+
+/* .text {
+  float: left;
+  text-align: justify;
+} */
+
+/* Font-family helper example*/
+.font-fam-orbitron {
+  font-family: "Orbitron";
+}
